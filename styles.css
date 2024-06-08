@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: flex-end; /* Align content to the bottom */
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: right; /* Align text to the right */
+  position : relative
+  margin-bottom: 20px; /* Add some space from the bottom */
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align items to the right */
+  margin-bottom: 20px;
+  width: 100%; /* Full width to allow proper alignment */
+}
+
+#clickable {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 10px;
+  width: fit-content;
+  position: absolute; /* Position the button absolutely */
+  bottom: 10px; /* 20px from the bottom */
+  right: 20px; /* 20px from the right */
+}
+
+#textInput {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: none;
+  margin-bottom: 10px;
+}
+
+.chat-bubble {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+  position: absolute; /* Position the bubble absolutely */
+  top: 5%; /* Center the bubble vertically */
+  right: 20px; /* 20px from the right */
+  /* Adjust for vertical centering */
+}
+
+
